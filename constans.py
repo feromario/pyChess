@@ -3,7 +3,7 @@ import pygame
 # ***** Board dimensions *****
 BOARD_SIZE       = 8
 SQUARE_SIZE      = 80
-WINDOW_SIZE      = BOARD_SIZE * SQUARE_SIZE
+WINDOW_SIZE      = BOARD_SIZE * SQUARE_SIZE # 640px
 
 # ***** Colors in RGB *****
 LIGHT_SQUARE     = (240, 217, 181)
