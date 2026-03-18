@@ -1,4 +1,6 @@
+import pygame
 from pieces import Piece
+from constans import LIGHT_SQUARE,  DARK_SQUARE, SQUARE_SIZE
 
 # class used to set up the grid and position pieces
 class Board:
@@ -25,5 +27,18 @@ class Board:
         for col, piece_type in enumerate(back_row):
             self.grid[7][col] = Piece('white', piece_type, 7, col)
             self.grid[6][col] = Piece('white', 'pawn', 6, col)
+
+    # screen is the parameter used for pygame window surface
+    def draw(self, screen):
+        # list holding color values, so index can be used
+        colors = [LIGHT_SQUARE, DARK_SQUARE]
+        # 2d loop to go through each square
+        for row in range(8):
+            for col in range(8):
+                # returns either 0 or 1 depending on sum of row and col being odd or even
+                # index used to create pattern
+                color = colors[ (row + col) % 2 ]
+                # draws, ( x, y, width, height)
+                pygame.draw.rect(screen, color, (col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
 
 # Board class ends here
