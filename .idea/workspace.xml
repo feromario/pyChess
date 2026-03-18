@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d78ebb7e-0a08-46ba-b442-27e6e784c34a" name="Changes" comment="Set up basic window.">
-      <change beforePath="$PROJECT_DIR$/pieces.py" beforeDir="false" afterPath="$PROJECT_DIR$/pieces.py" afterDir="false" />
+    <list default="true" id="d78ebb7e-0a08-46ba-b442-27e6e784c34a" name="Changes" comment="Added &quot;Piece&quot; class.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.board.executor": "Run",
     "Python.main.executor": "Run",
     "Python.pieces.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -95,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773782709189</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added &quot;Piece&quot; class.">
+      <option name="closed" value="true" />
+      <created>1773783226771</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773783226771</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +123,7 @@
     <MESSAGE value="Init." />
     <MESSAGE value="Added constants." />
     <MESSAGE value="Set up basic window." />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up basic window." />
+    <MESSAGE value="Added &quot;Piece&quot; class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Piece&quot; class." />
   </component>
 </project>
