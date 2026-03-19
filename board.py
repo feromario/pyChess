@@ -41,4 +41,77 @@ class Board:
                 # draws, ( x, y, width, height)
                 pygame.draw.rect(screen, color, (col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
 
+    # drawing pieces (placeholder for now)
+    def draw_pieces(self, screen, font):
+        # loop to visit every square
+        for row in range(8):
+            for col in range(8):
+                # grabs element in grid
+                piece = self.grid[row][col]
+                # only runs if element is not "None"
+                if piece is not None:
+                    # calculates coordinates within a square
+                    center = (col * SQUARE_SIZE + SQUARE_SIZE // 2, row * SQUARE_SIZE + SQUARE_SIZE // 2)
+                    # picks color
+                    color = (255, 255, 255) if piece.color == 'white' else (30, 30, 30)
+                    # draws circle acting as a piece
+                    pygame.draw.circle(screen, color, center, SQUARE_SIZE // 2 - 8)
+                    # grabs first letter for id, BUG: knight and king start with k, fix after
+                    letter = piece.piece_type[0].upper()
+                    # creates letter to id piece
+                    text = font.render(letter, True, (255, 0, 0))
+                    # blit -> draws letter on top of another surface
+                    screen.bilt(text, text.get_rect(center=center))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Board class ends here
