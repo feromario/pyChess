@@ -13,6 +13,9 @@ def main():
     # board object
     board = Board()
 
+    # create font to represent pieces (placeholder)
+    font = pygame.font.SysFont("Arial", 36)
+
     # game loop
     running = True
     while running:
@@ -26,6 +29,7 @@ def main():
         screen.fill((0, 0, 0))
         # calls draw function from Board class
         board.draw(screen)
+        board.draw_pieces(screen, font)
 
         # drawing done off-screen and then made visible, prevents flickering
         pygame.display.flip()

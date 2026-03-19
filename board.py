@@ -61,7 +61,7 @@ class Board:
                     # creates letter to id piece
                     text = font.render(letter, True, (255, 0, 0))
                     # blit -> draws letter on top of another surface
-                    screen.bilt(text, text.get_rect(center=center))
+                    screen.blit(text, text.get_rect(center=center))
 
 
 
